@@ -2,10 +2,13 @@ Git is a version control system.
 Git is free software.
 
 git init 创建仓库 将此目录设为仓库
-git add xxx.txt 添加到仓库
-git commit 确认提交进仓库
+git add xxx.txt 添加到仓库暂存区
+git commit 确认提交进仓库分支
 git status 查看仓库状态
 git diff  查看修改内容（difference）
 git log 查看提交日志 可加--pretty=oneline
-
-这是一行废话
+git reset --hard HEAD^ 返回上一版本
+git reflog 用来记录你的每一次命令（借此可查询版本号）
+git checkout -- xxx.txt 用版本库里的版本替换工作区的版本 把文件在工作区的修改全部撤销，重置为版本库的最新版本（如果添加到了暂存区，则回退至暂存区的版本）
+git rm test.txt 删除版本库里的文件
+git push 当前分支master推送到远程。 （第一次使用-u 表示本地分支和远程分支关联）
