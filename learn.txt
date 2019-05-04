@@ -7,3 +7,5 @@ git commit 确认提交进仓库
 git status 查看仓库状态
 git diff  查看修改内容（difference）
 git log 查看提交日志 可加--pretty=oneline
+
+这是一行废话
