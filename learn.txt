@@ -1,2 +1,8 @@
 Git is a version control system.
 Git is free software.
+
+git init 创建仓库
+git add 添加到仓库
+git commit 确认提交进仓库
+git status 查看仓库状态
+git diff  查看修改内容（difference）
