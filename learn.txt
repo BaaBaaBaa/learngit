@@ -3,12 +3,26 @@ Git is free software.
 
 git init 创建仓库 将此目录设为仓库
 git add xxx.txt 添加到仓库暂存区
-git commit 确认提交进仓库分支
+git commit -m "注释" 确认提交进仓库分支
+
 git status 查看仓库状态
 git diff  查看修改内容（difference）
 git log 查看提交日志 可加--pretty=oneline
+
 git reset --hard HEAD^ 返回上一版本
 git reflog 用来记录你的每一次命令（借此可查询版本号）
 git checkout -- xxx.txt 用版本库里的版本替换工作区的版本 把文件在工作区的修改全部撤销，重置为版本库的最新版本（如果添加到了暂存区，则回退至暂存区的版本）
 git rm test.txt 删除版本库里的文件
-git push 当前分支master推送到远程。 （第一次使用-u 表示本地分支和远程分支关联）
+
+git remote add origin git@server-name:path/repo-name.git； 关联一个远程库
+git push -u origin master 关联后，使用命令第一次推送master分支的所有内容；
+git push origin master 此后，每次本地提交后，只要有必要，就可以使用命令推送最新修改；
+git clone git@github.com:xxx/xxx.git 远程克隆
+
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
