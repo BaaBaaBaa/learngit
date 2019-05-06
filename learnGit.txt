@@ -1,8 +1,6 @@
-﻿Git is a version control system.
-Git is free software.
-
-git init 创建仓库 将此目录设为仓库
-git add xxx.txt 添加到仓库暂存区
+﻿git init 创建仓库 将此目录设为仓库
+git add xxx.txt 添加到仓库暂存区  后面加一个“.”，匹配所有的文件 
+git add -u  --update    更新所有改变的文件，即提交所有变化的文件
 git commit -m "注释" 确认提交进仓库分支
 
 git status 查看仓库状态
